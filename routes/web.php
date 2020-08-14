@@ -68,13 +68,14 @@ Route::get('/ajax/search', 'HomeController@ajax_search' )->name('home.ajax_searc
 
 Route::get('/test', function(){
 
-
+//return config('app.cdn_subdomain')."/js/home.lib.js" ;
+	//return asset('js/home.lib.js') ; 
 
 });
 
 Route::get('/test2', function(){
 
-echo  phpinfo();  
+
 
 });
 
@@ -174,8 +175,3 @@ Route::middleware(['auth','baseUserNotAllow'])->group(function () {
 
 
 
-
-
-
-//Auth::routes(['verify' => true]);
-//Route::get('/home', 'HomeController@index')->name('home');

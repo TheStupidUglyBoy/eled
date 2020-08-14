@@ -11,7 +11,7 @@
 
     	<div class="container-fluid">
 	      <h1 class="h3 mb-2 text-gray-800">{{ $page_title ?? 'eled commnity'   }}</h1>
-
+	      <span class="d-none" id="upload_image_url">{{ route('post.upload_image') }}</span>
 	      <div class="row">
 	      	<div class="col-12">
 	      		<div class="card shadow mb-4">

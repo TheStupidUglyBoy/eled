@@ -19,6 +19,7 @@ class Image extends Model
     public function getNameAttribute($value)
     {
         return asset("storage/".$value) ;
+        //return config('app.cdn_subdomain')."storage/".$value;
     }
 
     public function getThumbnailAttribute($value)

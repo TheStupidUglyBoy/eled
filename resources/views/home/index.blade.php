@@ -3,7 +3,7 @@
 
 @section('style')
   <link rel="stylesheet" href="{{asset('app/css/jquery.fancybox.min.css')}}" />
-
+@endsection
 @section('page.content')
 
     <section style="background: url({{ $HomePage->heading_background_image ?? 'img/hero.jpg'  }}); background-size: cover; background-position: center center" class="hero">

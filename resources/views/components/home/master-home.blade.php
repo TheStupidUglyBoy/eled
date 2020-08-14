@@ -18,6 +18,12 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   
 	<script src="{{asset('js/home.lib.js')}}"></script>
+
+	<!-- production loading asset via cdn sudomain -->
+	<!-- <link rel="stylesheet" href="{{config('app.cdn_subdomain').'css/base.css'}}" > -->
+	<!-- <link rel="shortcut icon" href="{{config('app.cdn_subdomain').'favicon.png'}}"> -->
+	<!-- <script src="{{config('app.cdn_subdomain').'js/home.lib.js'}}"></script> -->
+
 </head>
 
 <body >

@@ -22,16 +22,16 @@ class DatabaseSeeder extends Seeder
         DB::statement('SET FOREIGN_KEY_CHECKS=0');
         //DB::table('posts')->truncate();
 
-        factory(App\User::class,10)->create()->each(function($user){
+        factory(App\User::class,20)->create()->each(function($user){
 
             $user->post()->save( factory(App\Post::class)->make() );
             $user->tip()->save( factory(App\Tip::class)->make() );
             $user->news()->save( factory(App\News::class)->make() );
-            //factory(App\News::class,40)->create();
+
         });
 
-        factory(App\Category::class,4)->create();
-        factory(App\Role::class,1)->create();
+        //factory(App\Category::class,4)->create();
+        //factory(App\Role::class,1)->create();
         
     }
 }

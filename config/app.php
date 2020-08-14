@@ -15,6 +15,8 @@ return [
 
     'name' => env('APP_NAME', 'Eled'),
 
+    'cdn_subdomain' => 'http://cdn.lju65i.online',
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment
